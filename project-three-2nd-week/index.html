@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Three</title>
-</head>
-<body>
-  <textarea class="input-text" placeholder="Add your text here" rows="10" cols="100"></textarea><br /><br />
-  <button class="button">Refine your text</button>
-  <h4 class="output-text"></h4>
-  <script src="./script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Three</title>
+    <style>
+      .slang,
+      .hints {
+        color: #566573;
+      }
+      h4.dispay-info {
+        background: bisque;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: darkslategrey;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Filter your text-->
+    <h2>Filter your text</h2>
+    <textarea
+      class="input-text"
+      placeholder="Add your text here"
+      rows="10"
+      cols="100"
+    ></textarea
+    ><br /><br />
+    <button class="button">Find Slang Word</button>
+    <h4 class="output-text"></h4>
+    <h5 class="slang-found"></h5>
+    <h5 class="character-count"></h5>
+
+    <!-- Write About you -->
+    <h2>Write About You</h2>
+    <div class="hints">
+      <ol>
+        <li data-list="name">Must have to add your name</li>
+        <li data-list="age">Must have to add your age</li>
+        <li data-list="hobby">Must have to add your hobby</li>
+      </ol>
+    </div>
+    <textarea
+      class="input-texts"
+      placeholder="Add your text here"
+      rows="4"
+      cols="50"
+    ></textarea
+    ><br /><br />
+    <button class="my-info">Add Info</button>
+    <h4 class="dispay-info"></h4>
+
+    <!-- Organize your word -->
+    <h2>Organize your word</h2>
+    <h4 class="or-result"></h4>
+    <input type="text" class="or-input" /><br /><br />
+    <button class="array-unshift">Add word infront</button>
+    <button class="array-push">Add word end</button>
+    <button class="array-shift">Remove word from infront</button>
+    <button class="array-pop">Remove word from back</button>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
