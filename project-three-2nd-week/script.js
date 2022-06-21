@@ -150,3 +150,8 @@ function printOutput(){
     orOutput.innerHTML += ' ' + result[i];
   }
 }
+
+/*
+counter (+ - * /)
+user input
+*/
